@@ -1,0 +1,98 @@
+nav {
+    text-align: right; 
+    display:block; 
+    height:40px;
+    padding-top:10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  }
+
+
+.box1 {
+/*nav bar use . not # for class*/ 
+  border-bottom: 10px double black;
+}
+
+.box2 {
+/*right container box*/
+  border-right: 10px double black;
+  height: 900px;
+  position: absolute;
+  right: 50%;
+  margin-top: 60px;
+  margin-left: 50px;
+  left: 100px;
+  margin-left: -20px;
+  top: 0;
+  text-align: left;
+  text-align: center;
+  padding:50px; /* Optional: Add padding for spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#heading1 {
+text-align:right;
+}
+
+.circle-container {
+  display: flex;
+ justify-content: flex-end;
+ left: 500px;
+}
+.circle {
+  width: 500px;
+  height: 500px;
+  margin-right: 100px;
+  border-radius: 50%; /* Use 50% for a perfect circle */
+  background: linear-gradient(to right, #ffed00, #ff8c00);
+  display: flex;
+  justify-content: center; /* Move the circle to the left */
+  align-items: center; /* Center vertically */
+  align-content: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for a 3D effect */
+  border: 5px solid rgba(255, 255, 255, 0.5); /* Add a border for a glass look */
+}
+.box3 {
+text-align: right;
+padding-top: 200px;
+padding-right: 100px;
+padding-bottom: 300px;
+
+}
+
+
+#mind {
+  text-align: right;
+  padding-right: 100px;
+}
+.box3 input[type="text"]
+
+.box3 textarea {
+  width: 43%;
+  max-width: 43%;
+  margin-top: 20px;
+}
+label {
+  display: block;
+  text-align: right;
+  margin-bottom: 5px;
+  padding-right: 500px;
+}
+input, textarea {
+  width: 45%;
+  padding: 5px;
+  margin-bottom: 10px;
+  align-items: left;
+  
+}
+
+#submit {
+  background-color: black;
+  color:white;
+}
