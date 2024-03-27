@@ -1,0 +1,15 @@
+#form label::after {
+    content: '*'; /* Add asterisk after labels for mandatory fields */
+    color: red; /* Set color for the asterisk */
+}
+
+#form input:required,
+#form textarea:required {
+    border: 1px solid red; /* Add red border to mandatory input fields */
+}
+
+#form input:required:focus,
+#form textarea:required:focus {
+    border: 1px solid red; /* Change border color on focus for mandatory fields */
+    outline: none; /* Remove default focus outline */
+}

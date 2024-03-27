@@ -24,15 +24,4 @@ const form = document.getElementById('form');
             window.location.href = 'blog.html'; // Replace 'posts.html' with the actual URL of your posts page
         });
 
-        const form = document.getElementById('form');
-
-form.addEventListener('submit', function(event) {
-    const username = document.getElementById('username').value;
-    const title = document.getElementById('title').value;
-    const content = document.getElementById('content').value;
-
-    if (!username || !title || !content) {
-        alert('Please complete all fields before submitting the form.');
-        event.preventDefault(); // Prevent form submission
-    }
-});
+  
