@@ -1,27 +1,25 @@
 const form = document.getElementById('form');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(form);
+    const dataObject = {};
+    
+    let isFormValid = true;
 
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
+    for (let [key, value] of formData.entries()) {
+        if (value.trim() === '') {
+            isFormValid = false;
+            break;
+        }
+        dataObject[key] = value;
+    }
 
-            const formData = new FormData(form);
-            const dataObject = {};
-
-            for (let [key, value] of formData.entries()) {
-                dataObject[key] = value;
-            }
-
-            localStorage.setItem('userData', JSON.stringify(dataObject));
-            alert('Data submitted and stored in local storage!');
-        });
-
-//Alert
-        document.getElementById('form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-        
-            // Handle form submission here (e.g., store data, etc.)
-        
-            // Redirect to the posts page
-            window.location.href = 'blog.html'; // Replace 'posts.html' with the actual URL of your posts page
-        });
-
-  
+    if (isFormValid) {
+        localStorage.setItem('userData', JSON.stringify(dataObject));
+        alert('Data submitted and stored in local storage!');
+        window.location.href = 'blog.html'; // Redirect only if all fields are complete
+    } else {
+        alert('Please fill out all fields (username, title, and content) before submitting.');
+    }
+});
