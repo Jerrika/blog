@@ -96,3 +96,8 @@ input, textarea {
   background-color: black;
   color:white;
 }
+
+@media screen and (min-width: 769px)
+ {
+   
+}

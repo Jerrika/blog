@@ -8,7 +8,7 @@ body {
     }
     
     .features {
-    width: 50%;
+    width: 100%;
     
     }
     
@@ -29,7 +29,19 @@ body {
     text-align: right;
     display: none;
     }
+
+    body {
+        background-color: #fff; /* Light mode background color */
+        color: #333; /* Light mode text color */
+    }
     
+    body.dark-mode {
+        background-color: #333; /* Dark mode background color */
+        color: #fff; /* Dark mode text color */
+    }
+    
+
+
     #back {
     text-align: right;
     display:block;
@@ -96,7 +108,7 @@ body {
     
     .box-3{
     border-top: 10px double black;
-    display: flex;
+    display: block;
     height: 20px;
     width: 100%;
     font-family: Arial, sans-serif;
@@ -107,21 +119,11 @@ body {
     
     footer {
     width: 100%;
+
     
     }
 
-    #form label::after {
-        content: '*'; /* Add asterisk after labels for mandatory fields */
-        color: red; /* Set color for the asterisk */
-    }
-    
-    #form input:required,
-    #form textarea:required {
-        border: 1px solid red; /* Add red border to mandatory input fields */
-    }
-    
-    #form input:required:focus,
-    #form textarea:required:focus {
-        border: 1px solid red; /* Change border color on focus for mandatory fields */
-        outline: none; /* Remove default focus outline */
-    }
+    @media screen and (min-width: 769px)
+    {
+      
+   }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Blog</title>
     <link rel="stylesheet" href="./blog.css" />
+    <link rel="stylesheet" href="dark-mode.css" />
 
 </head>
 
@@ -56,21 +57,32 @@
         </section>
 
         <section class="title4">
-            <h4>Here is The Title</h4>
-            <p>Here is the content</p>
-            <p>Posted by: Jerrika</p>
+            <h4 id="Title"></h4>
+            <p id="Content"></p>
+            <p id="User"></p>
             <!--JS script goes here from input form-->
+
+            <form id="form">
+            
+                <input type="hidden" id="User" name="User">
+                <input type="hidden" id="Title" name="Title">
+                <input type="hidden" id="Content" name="Content">
+            </form>
         </section>
 
     </div>
-
+    <script src="blog.js"></script>
+    <a href="index.html"></a>
+    <script src="form.js"></script>
+    <script src="dm.js"></script>
 </body>
 
 <footer>
     <div class="box-3">
-
-        <p>Email: JerrikaGabriel@gmail.com</p>
-
+        
+        <p><a href="https://jerrika.github.io/my-portfolio/">Jerrika's Portfoilio</a></p>
+        <p>Blog: Full Stack Developer</p>
+        <p>Email: jerrikagabriel@gmail.com</p>
     </div>
 
 </footer>
